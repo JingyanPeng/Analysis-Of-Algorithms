@@ -1,0 +1,10 @@
+Summary
+
+1.Why the Efficient and Basic Versions Have Different Memory and Time Plots
+	- Memory: The basic solution includes DP[n][m] to store the optimal values whose size is m*n, while the memory efficient solution includes DP[2][m] to store the optimal values whose size is only m*2. So the basic version solution consumes much more memories than the memory efficient version solution when the problem size grows large.
+	- Time: The basic version solution takes O(mn). The memory efficient version solution takes 2Cmn = O(mn). Here 2Cmn is the total of Cmn + Cmn/2 + Cmn/4 + Cmn/8 + ... So the memory efficient version solution takes at most as 2 times CPU time as the basic version solution.
+
+2.Contributions
+	2422067044 (Hang Zheng)		- Basic Algorithm, Memory Efficient Version.
+	8118050547 (Jingyan Peng)		- Input String Generator, Output, Plots, Summary.
+	
